@@ -54,6 +54,8 @@ StatusNotifierWatcher; it borrows the panel buttons those extensions create.
    Item menus open anchored to the icon inside the flyout; the flyout stays open
    underneath. Choosing a menu entry or clicking outside closes the flyout too;
    Escape or a click on another flyout icon only closes the icon menu.
+   Icon menus in the flyout do not follow the pointer to other icons (no hover
+   switching, as on Windows); the next click closes the open menu.
    Hovering or focusing an icon in the flyout shows its name as a tooltip.
 6. New SNI/XEmbed items go to the flyout (`new-icons-hidden`, default on, Windows
    default). New ext items stay in the panel. First run: when `known-items` is empty,

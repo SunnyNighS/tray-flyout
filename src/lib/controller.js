@@ -62,6 +62,13 @@ function isStockMenuButton(button) {
         GObject.signal_has_handler_pending(button, GObject.signal_lookup(name, button.constructor.$gtype), 0, true));
 }
 
+// Menus of icons in the flyout stay open until a click, like on Windows: the
+// stock manager switches to another menu when its icon is hovered or focused,
+// which is the only use of _changeMenu().
+class StickyMenuManager extends PopupMenu.PopupMenuManager {
+    _changeMenu(_menu) {}
+}
+
 // Brings keys stored by older versions in line with the current ones.
 function migrateKeys(settings) {
     const normalize = list => [...new Set(list.map(normalizeKey))];
@@ -112,7 +119,7 @@ export class TrayFlyout {
         this._grid.maxColumns = settings.get_int('max-columns');
         Main.panel.addToStatusArea(OWN_ROLE, this._chevron, 0, boxName(this._trayBox));
 
-        this._itemMenus = new PopupMenu.PopupMenuManager(this._chevron);
+        this._itemMenus = new StickyMenuManager(this._chevron);
         this._drag = new DragTracker(this);
         this._tooltip = new Tooltip();
 
@@ -582,7 +589,8 @@ export class TrayFlyout {
         const type = event?.type();
         if (type === Clutter.EventType.KEY_PRESS && event.get_key_symbol() === Clutter.KEY_Escape)
             return;
-        if (type === Clutter.EventType.BUTTON_PRESS && containsPoint(this._grid, ...event.get_coords()))
+        const isClick = type === Clutter.EventType.BUTTON_PRESS || type === Clutter.EventType.BUTTON_RELEASE;
+        if (isClick && containsPoint(this._grid, ...event.get_coords()))
             return;
         this._closeFlyout();
     }
