@@ -1,0 +1,52 @@
+/* SPDX-License-Identifier: GPL-2.0-or-later */
+
+.tray-flyout-chevron-icon {
+  icon-size: 16px;
+}
+
+/* Themes give popup menus a minimum width meant for text menus. */
+.tray-flyout-menu,
+.tray-flyout-menu .popup-menu-content {
+  min-width: 0;
+}
+
+.tray-flyout-menu .popup-menu-content {
+  padding: 6px;
+}
+
+.tray-flyout-grid {
+  spacing: 2px;
+}
+
+.tray-flyout-grid .panel-button {
+  -natural-hpadding: 6px;
+  -minimum-hpadding: 6px;
+  border-radius: 6px;
+  border: none;
+  margin: 0;
+  transition-duration: 100ms;
+}
+
+.tray-flyout-grid .panel-button:hover,
+.tray-flyout-grid .panel-button:focus {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.tray-flyout-grid .panel-button:active,
+.tray-flyout-grid .panel-button:checked {
+  background-color: rgba(128, 128, 128, 0.32);
+}
+
+.tray-flyout-drop-marker {
+  width: 2px;
+  border-radius: 1px;
+  background-color: #3584e4;
+}
+
+.tray-flyout-tooltip {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  font-size: 0.9em;
+}

@@ -1,0 +1,76 @@
+# German translation of Tray Flyout.
+# SPDX-License-Identifier: GPL-2.0-or-later
+msgid ""
+msgstr ""
+"Project-Id-Version: tray-flyout\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Show hidden icons"
+msgstr "Ausgeblendete Symbole anzeigen"
+
+msgid "Extension button"
+msgstr "Schaltfläche einer Erweiterung"
+
+msgid "Legacy tray icon"
+msgstr "Klassisches Tray-Symbol"
+
+msgid "Application"
+msgstr "Anwendung"
+
+msgid "No tray icons seen yet"
+msgstr "Noch keine Tray-Symbole erkannt"
+
+msgid "Forget this icon"
+msgstr "Symbol vergessen"
+
+msgid "Behavior"
+msgstr "Verhalten"
+
+msgid "Hidden icon menu"
+msgstr "Menü für ausgeblendete Symbole"
+
+msgid "Show the chevron that opens the flyout. When off, icons that are not shown in the panel are not shown at all."
+msgstr "Zeigt den Pfeil, der das Ausklappmenü öffnet. Ist das aus, werden Symbole, die nicht im Panel stehen, gar nicht angezeigt."
+
+msgid "Show all icons in the panel"
+msgstr "Alle Symbole im Panel anzeigen"
+
+msgid "Ignore the flyout and show every tray icon in the panel."
+msgstr "Das Ausklappmenü nicht verwenden und alle Tray-Symbole im Panel anzeigen."
+
+msgid "Put new icons into the flyout"
+msgstr "Neue Symbole ins Ausklappmenü legen"
+
+msgid "Icons of applications that were not seen before start in the flyout."
+msgstr "Symbole von Anwendungen, die zum ersten Mal auftauchen, landen im Ausklappmenü."
+
+msgid "Left click opens the application"
+msgstr "Linksklick öffnet die Anwendung"
+
+msgid "When off, a left click opens the menu and a double click opens the application."
+msgstr "Ist das aus, öffnet ein Linksklick das Menü und ein Doppelklick die Anwendung."
+
+msgid "Include buttons of other extensions"
+msgstr "Schaltflächen anderer Erweiterungen einbeziehen"
+
+msgid "Buttons of other extensions next to the tray can be moved into the flyout, too."
+msgstr "Auch Schaltflächen anderer Erweiterungen neben dem Tray lassen sich ins Ausklappmenü verschieben."
+
+msgid "Maximum columns"
+msgstr "Maximale Spaltenzahl"
+
+msgid "0 arranges the icons in a square"
+msgstr "0 ordnet die Symbole quadratisch an"
+
+msgid "Keyboard shortcut to open the flyout"
+msgstr "Tastenkürzel zum Öffnen des Ausklappmenüs"
+
+msgid "Tray icons"
+msgstr "Tray-Symbole"
+
+msgid "Switched on: shown in the panel. Switched off: shown in the flyout. Icons can also be dragged between panel and flyout."
+msgstr "Eingeschaltet: im Panel. Ausgeschaltet: im Ausklappmenü. Symbole lassen sich auch per Drag & Drop zwischen Panel und Ausklappmenü verschieben."

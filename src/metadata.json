@@ -1,0 +1,10 @@
+{
+  "uuid": "tray-flyout@sunnynighs.github.io",
+  "name": "Tray Flyout",
+  "description": "Keeps the tray in the panel short: tray icons you don't need all the time move into a flyout behind a chevron, like \"Show hidden icons\" on other desktops. Drag icons between panel and flyout, or choose them in the preferences.\n\nRequires an AppIndicator extension (e.g. \"AppIndicator and KStatusNotifierItem Support\").",
+  "shell-version": ["46"],
+  "url": "https://github.com/SunnyNighS/tray-flyout",
+  "settings-schema": "org.gnome.shell.extensions.tray-flyout",
+  "gettext-domain": "tray-flyout@sunnynighs.github.io",
+  "version-name": "1.0"
+}

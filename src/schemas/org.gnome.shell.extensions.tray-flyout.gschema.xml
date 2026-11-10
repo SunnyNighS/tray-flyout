@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.tray-flyout" path="/org/gnome/shell/extensions/tray-flyout/">
+    <key name="promoted-items" type="as">
+      <default>[]</default>
+      <summary>Icons shown in the panel, in panel order</summary>
+    </key>
+    <key name="hidden-items" type="as">
+      <default>[]</default>
+      <summary>Icons shown in the flyout, in flyout order</summary>
+    </key>
+    <key name="known-items" type="a{ss}">
+      <default>{}</default>
+      <summary>Every icon seen so far, mapped to its display name</summary>
+    </key>
+    <key name="new-icons-hidden" type="b">
+      <default>true</default>
+      <summary>Put newly appearing tray icons into the flyout</summary>
+    </key>
+    <key name="show-hidden-icon-menu" type="b">
+      <default>true</default>
+      <summary>Show the chevron and flyout</summary>
+      <description>When disabled, icons that are not shown in the panel are not shown at all.</description>
+    </key>
+    <key name="show-all-icons" type="b">
+      <default>false</default>
+      <summary>Show all icons in the panel</summary>
+    </key>
+    <key name="max-columns" type="i">
+      <range min="0" max="12"/>
+      <default>0</default>
+      <summary>Maximum number of columns in the flyout (0 = automatic)</summary>
+    </key>
+    <key name="left-click-activates" type="b">
+      <default>true</default>
+      <summary>Left click on a tray icon opens the application</summary>
+      <description>When disabled, tray icons keep the behaviour of the AppIndicator extension (left click opens the menu, double click opens the application).</description>
+    </key>
+    <key name="manage-extension-buttons" type="b">
+      <default>true</default>
+      <summary>Allow moving buttons of other extensions next to the tray into the flyout</summary>
+    </key>
+    <key name="focus-tray-shortcut" type="as">
+      <default><![CDATA[['<Super>b']]]></default>
+      <summary>Keyboard shortcut that opens the flyout</summary>
+    </key>
+  </schema>
+</schemalist>
